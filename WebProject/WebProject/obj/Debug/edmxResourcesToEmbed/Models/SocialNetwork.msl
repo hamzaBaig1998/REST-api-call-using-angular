@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="socialModelStoreContainer" CdmEntityContainer="socialEntities">
+    <EntitySetMapping Name="admins">
+      <EntityTypeMapping TypeName="socialModel.admin">
+        <MappingFragment StoreEntitySet="admins">
+          <ScalarProperty Name="adminId" ColumnName="adminId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="comments">
+      <EntityTypeMapping TypeName="socialModel.comment">
+        <MappingFragment StoreEntitySet="comments">
+          <ScalarProperty Name="commentId" ColumnName="commentId" />
+          <ScalarProperty Name="postId" ColumnName="postId" />
+          <ScalarProperty Name="comment1" ColumnName="comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="posts">
+      <EntityTypeMapping TypeName="socialModel.post">
+        <MappingFragment StoreEntitySet="posts">
+          <ScalarProperty Name="postNumber" ColumnName="postNumber" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="likes" ColumnName="likes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="socialModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
